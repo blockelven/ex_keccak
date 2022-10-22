@@ -4,7 +4,7 @@ defmodule ExKeccak.MixProject do
   def project do
     [
       app: :ex_keccak,
-      version: "0.6.0",
+      version: "0.6.01",
       elixir: "~> 1.10",
       description: description(),
       compilers: Mix.compilers(),
@@ -32,7 +32,8 @@ defmodule ExKeccak.MixProject do
         "lib",
         "LICENSE",
         "README.md",
-        "CHANGELOG.md"
+        "CHANGELOG.md",
+        "checksum-Elixir.ExKeccak.exs"
       ]
     ]
   end
@@ -53,7 +54,8 @@ defmodule ExKeccak.MixProject do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:benchee, "~> 1.0", only: :test},
-      {:rustler, "~> 0.26"}
+      {:rustler, "~> 0.26"},
+      {:rustler_precompiled, "~> 0.5.3"}
     ]
   end
 end
