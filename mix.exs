@@ -1,10 +1,12 @@
 defmodule ExKeccak.MixProject do
   use Mix.Project
 
+  @version "0.6.3"
+
   def project do
     [
       app: :ex_keccak,
-      version: "0.6.2",
+      version: @version,
       elixir: "~> 1.10",
       description: description(),
       compilers: Mix.compilers(),
